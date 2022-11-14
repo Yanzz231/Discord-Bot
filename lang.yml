@@ -1,0 +1,369 @@
+# ===========================================================================
+# Plex Bot Language Configuration
+# If you find any issues, need support, or have a suggestion for the bot, please join our support server and create a ticket, 
+# https://discord.gg/eRaeJdTsPY
+# ===========================================================================
+
+# ===========================================================================
+# BASIC MESSAGES
+# ===========================================================================
+NoPermsMessage: "Sorry, you don't have permissions to use this command!"
+
+SuccessEmbedTitle: "Successful"
+ErrorEmbedTitle: "An error has occurred"
+
+# ===========================================================================
+# BACKUP COMMAND MESSAGES
+# ===========================================================================
+BackupCreating: "✅ | Creating backup, please wait..."
+BackupCreatedEmbed: "Successfully **created a backup** of this guild!"
+BackupCreatedMsg: "✅ | Successfully created a backup of this guild, The backup information has been sent to your DMS!"
+BackupWrongUsage: "Please specify a valid backup ID!"
+BackupDeleted: "Successfully deleted backup!"
+BackupNotFound: "No backup found with that ID!"
+BackupLoadWarning: "⚠️ All the server channels, roles, and settings will be cleared. Are you sure you want to load the backup?"
+BackupLoading: "⚠️ Loading backup..."
+BackupLoaded: "Backup loaded successfully!"
+BackupCancelled: "Cancelled!"
+BackupEmbedUsage: "Usage"
+BackupCreatedBy: "Created by:"
+BackupButtonConfirm: "Confirm"
+BackupButtonCancel: "Cancel"
+
+# ===========================================================================
+# ASCII COMMAND MESSAGES
+# ===========================================================================
+AsciiTooLong: "Please provide a text shorter than 2000 characters!"
+
+# ===========================================================================
+# AVATAR COMMAND MESSAGES
+# ===========================================================================
+AvatarSearchedBy: "Searched by:"
+AvatarClickHere: "Click here for image"
+
+# ===========================================================================
+# COINFLIP COMMAND MESSAGES
+# ===========================================================================
+CoinflipMsg: "{user-tag} flipped a coin!" # Available variables: {user-tag}
+CoinflipDone: "It landed on **{result}**!" # Available variables: {result}
+
+# ===========================================================================
+# MEME COMMAND MESSAGES
+# ===========================================================================
+MemeViewThread: "View thread"
+
+# ===========================================================================
+# SNIPE COMMAND MESSAGES
+# ===========================================================================
+SnipeNoMsg: "There's nothing to snipe!"
+
+# ===========================================================================
+# GIVEAWAY COMMAND MESSAGES
+# ===========================================================================
+GiveawayCreateWrongUsage: "Too few arguments given\n\nUsage:\n``gcreate <#channel> <time> <total winners> <prize>``"
+GiveawayCreateDuration: "Please provide a valid duration"
+GiveawayCreateWinners: "Please provide a valid number of winners from 1-50!"
+GiveawayCreatePrize: "Please enter what you are giving away!"
+GiveawayCreateStart: "Successfully started your giveaway in {channel}" # Available variables: {channel}
+
+GiveawayDeleteMsgID: "Please provide a valid Giveaway Message ID!"
+GiveawayDeleteSuccess: "Successfully deleted the giveaway!"
+
+GiveawayEndSuccess: "Successfully ended the giveaway!"
+
+GiveawayRerollSuccess: "Successfully rerolled the giveaway!"
+
+GiveawayEmbedTitle: "🎉🎉 **GIVEAWAY** 🎉🎉"
+GiveawayEmbedEndedTitle: "🎉🎉 **GIVEAWAY ENDED** 🎉🎉"
+GiveawayDrawing: "Drawing: {timestamp}"
+GiveawayDropMessage: "Be the first to react with 🎉!"
+GiveawayReact: "React with 🎉 to participate!"
+GiveawayWinMessage: "Congratulations, {winners}! You won **{this.prize}**!"
+GiveawayEmbedFooter: "{this.winnerCount} winner(s)"
+GiveawayNoWinner: "Giveaway cancelled, no valid participations."
+GiveawayHostedBy: "Hosted by: {this.hostedBy}"
+GiveawayWinners: "Winner(s):"
+GiveawayEndedAt: "Ended at"
+
+# ===========================================================================
+# LEADERBOARD COMMAND MESSAGES
+# ===========================================================================
+LeaderboardNobodyOnLB: "Nobody is on the leaderboard yet."
+LeaderboardEmbedTitle: "{guild-name}'s Level Leaderboard" # Available variables: {guild-name}
+LeaderboardMessageEmbedTitle: "{guild-name}'s Message Leaderboard" # Available variables: {guild-name}
+
+LeaderboardYourLevel: "Your level:"
+LeaderboardYourMessages: "Your Messages:"
+
+# ===========================================================================
+# ADDROLE/REMOVEROLE COMMAND MESSAGES
+# ===========================================================================
+AddroleSelfRole: "You can't give roles to yourself!"
+AddroleHighestRole: "You cannot do this, because my highest role is not above this role."
+AddroleUserRoleNotAbove: "You cannot do this, because your role is not above this role."
+AddroleAlreadyHave: "They already have that role."
+AddroleEmbedTitle: "Role Added"
+AddroleEmbedRole: "Role:"
+AddroleEmbedAssignedBy: "Assigned By:"
+AddroleEmbedAssignedTo: "Assigned To:"
+AddroleUserMsg: "You have been given the role **{role}** in {guild-name}" # Available variables: {role}, {guild-name}
+
+RemoveroleSelf: "You can't remove roles from yourself."
+RemoveroleNoRole: "They don't have that role."
+RemoveroleEmbedTitle: "Role Removed"
+RemoveroleEmbedRemovedBy: "Removed By:"
+RemoveroleEmbedRemovedFrom: "Removed From:"
+RemoveroleUserMsg: "You have been removed from the role **{role}** in {guild-name}" # Available variables: {role}, {guild-name}
+
+# ===========================================================================
+# BAN/KICK COMMAND MESSAGES
+# ===========================================================================
+BanCantBanUser: "I can't ban this user!"
+BanCantBanBots: "You can't ban bots!"
+BanCantBanSelf: "You can't ban yourself!"
+BanNoReason: "Please provide a reason to ban this user!"
+BanUserMsg: "You have been banned from **{guild-name}**\nReason: {reason}" # Available variables: {guild-name}, {reason}
+BanMsg: "{user} has been banned!" # Available variables: {user}, {reason}
+
+KickCantKickBots: "You can't kick a bot!"
+KickCantKickUser: "I can't kick this user!"
+KickCantKickself: "You can't kick yourself!"
+KickNoReason: "Please provide a reason to kick this user!"
+KickUserMsg: "You have been kicked from **{guild-name}**\nReason: {reason}" # Available variables: {guild-name}, {reason}
+KickMsg: "{user} has been kicked!" # Available variables: {user}, {reason}
+
+# ===========================================================================
+# HISTORY/CLEARHISTORY COMMAND MESSAGES
+# ===========================================================================
+HistoryEmbedTitle: "{user-tag}'s history" # Available variables: {user-tag}
+HistoryEmbedUserInfo: "User Information:"
+HistoryEmbedName: "Name:"
+HistoryEmbedJoinedServer: "Joined Server:"
+HistoryTotalMessages: "Total Messages:"
+HistoryEmbedNote: "Note:"
+HistoryEmbedWarnings: "⚠ Warnings"
+HistoryEmbedTimeouts: "🔇 Timeouts"
+HistoryEmbedKicks: "👢 Kicks"
+HistoryEmbedBans: "🔨 Bans"
+
+ClearhistorySuccess: "Successfully cleared {user}'s history!" # Available variables: {user}
+
+# ===========================================================================
+# POLL COMMAND MESSAGES
+# ===========================================================================
+PollEmbedTitle: "A poll has been started!"
+PollEmbedFooter: "Poll Started By:"
+
+# ===========================================================================
+# PURGE COMMAND MESSAGES
+# ===========================================================================
+PurgeNoAmount: "Please provide an amount of messages to purge!"
+PurgeCleared: "Cleared {amount} messages ✅" # Available variables: {amount}
+PurgeOld: "You can't delete messages older than 2 weeks!\n*Tip: If you want to delete all messages in a channel, Right click on the channel and click ``Clone Channel`` and then you can delete the old one!*" # %%__USER__%%
+
+# ===========================================================================
+# SETNOTE COMMAND MESSAGES
+# ===========================================================================
+NoteLongerThan250: "Notes can't be longer than 250 characters!"
+NoteCantAddBot: "You can't add a note to a bot!"
+NoteSuccess: "Successfully added note to **{user}**" # Available variables: {user}
+
+# ===========================================================================
+# SLOWMODE COMMAND MESSAGES
+# ===========================================================================
+SlowmodeReset: "The cooldown for this channel has been reset."
+SlowmodeFailed: "Failed to set slowmode in this channel, check your slowmode length."
+SlowmodeSuccess: "The cooldown for this channel has been set to **{time}** seconds." # Available variables: {time}
+
+# ===========================================================================
+# TIMEOUT COMMAND MESSAGES
+# ===========================================================================
+TimeoutNoReason: "No reason provided!"
+TimeoutValidTime: "Please specify a valid time!"
+TimeoutTimeLimit: "Timeout time can't be shorter than 10 seconds and longer than 28 days!"
+TimeoutMsg: "{user} has been timed out for {time}" # Available variables: {user}, {time}, {reason}
+
+# ===========================================================================
+# UNBAN COMMAND MESSAGES
+# ===========================================================================
+UnbanValidUserID: "Please provide a valid user ID"
+UnbanNoReason: "No reason provided!"
+UnbanUserNotBanned: "That user is not banned."
+UnbanMsg: "{user} has been unbanned" # Available variables: {user}
+
+# ===========================================================================
+# WARN COMMAND MESSAGES
+# ===========================================================================
+WarnBot: "You can't warn a bot!"
+WarnSelf: "You can't warn yourself!"
+WarnNoReason: "Please provide a reason to warn this user!"
+WarnUserMsg: "You have been warned in **{guild-name}**\nReason: {reason}" # Available variables: {guild-name}, {reason}
+WarnMsg: "{user} has been warned! They now have {totalWarns} warning(s)" # Available variables: {user}, {reason}, {totalWarns}
+
+CheckWarnsNotFound: "This user doesn't have any warnings!"
+
+# ===========================================================================
+# MUSIC COMMAND MESSAGES
+# ===========================================================================
+NotInVoiceChannel: "You must be in a voice channel!"
+NothingInQueue: "There is nothing in the queue right now!"
+NothingPlaying: "There is nothing playing!"
+QueueTooLong: "The queue is too long to send!"
+SongPaused: "Music has been paused! Use `/resume` to resume the music"
+EnterSong: "Please enter a song url or query to search."
+ServerQueue: "**Queue**"
+QueuePlaying: "Playing:"
+RepeatMode: "Set loop mode to ``{mode}``" # Available variables: {mode}
+SongResumed: "Resumed!"
+SongStopped: "Stopped!"
+EnterValidNumber: "Please enter a valid number!"
+VolumeSet: "Volume set to ``{volume}``" # Available variables: {volume}
+CurrentlyPlaying: "Currently Playing"
+SongSkipped: "Skipped **{song}**!" # Available variables: {song}
+
+
+MusicEmbedTitle: "🎵 Music"
+MusicRequestedBy: "Requested by:"
+MusicAddedBy: "Added by:"
+VoiceChannelEmpty: "Voice channel is empty! Leaving the channel..."
+NoResultFound: "No result found!"
+
+MusicNowPlaying: "**Now playing [{song-name}]({song-url})**" # Available variables: {song-name}, {song-url}
+MusicAddedToQueue: "**Added [{song-name}]({song-url}) to the queue**." # Available variables: {song-name}, {song-url}
+MusicPlaylistAddedToQueue: "**Added [{playlist-name}]({playlist-link}) playlist to the queue**." # Available variables: {playlist-name}, {playlist-link}
+
+# ===========================================================================
+# TICKET MESSAGES
+# ===========================================================================
+NotInTicketChannel: "You're not in a ticket channel!"
+TicketUserAdded: "Added **{user} ({user-tag})** to the ticket." # Available variables: {user}, {user-tag}
+TicketUserRemoved: "Removed **{user} ({user-tag})** from the ticket." # Available variables: {user}, {user-tag}
+
+TicketLogUserAddEmbedTitle: "🗒 Ticket User Added"
+TicketLogUserRemoveEmbedTitle: "🗒 Ticket User Removed"
+TicketLogUser: "User"
+TicketLogTicket: "Ticket"
+TicketLogAdded: "Added"
+TicketLogRemoved: "Removed"
+
+TicketCreatedMsg: "Your ticket has been created in"
+TicketCloseButton: "Close Ticket"
+DeletingTicket: "Deleting ticket in 5 seconds"
+TicketClosedTitle: "Ticket Closed"
+# ===========================================================================
+# EVENT LOGS MESSAGES
+# ===========================================================================
+ChannelCreatedEmbedTitle: "Channel Created"
+ChannelDeleteEmbedTitle: "Channel Deleted"
+ChannelEmbedUser: "User:"
+ChannelEmbedChannel: "Channel:"
+
+NicknameChangedEmbedTitle: "Nickname Changed"
+NicknameOld: "Old nickname"
+NicknameNew: "New nickname"
+NicknameTag: "Tag:"
+
+GuildNameUpdateEmbedTitle: "Guild Name Update"
+GuildNameUpdateEmbed: "Changed By:" # Available variables: {user}
+GuildNameUpdateOld: "Old Name"
+GuildNameUpdateNew: "New Name"
+
+MessageDeletedEmbedTitle: "Message Deleted"
+MessageDeletedTag: "Tag:"
+MessageDeletedChannel: "From Channel:"
+MessageDeletedContent: "Content:"
+
+MessageUpdateEmbedTitle: "Message Edited"
+MessageUpdateEditedBy: "Edited By:"
+MessageUpdateChannel: "Channel:"
+MessageUpdateOld: "Old Message"
+MessageUpdateNew: "New Message"
+
+# ===========================================================================
+# MODERATION LOGS
+# ===========================================================================
+ModerationEmbedTitle: "Moderation Action"
+AutoModeration: "Auto Moderation"
+ModerationEmbedAction: "Action:"
+ModerationEmbedDetails: "Details:"
+ModerationEmbedUser: "User:"
+ModerationEmbedStaff: "Staff:"
+ModerationEmbedReason: "Reason:"
+ModerationEmbedTime: "Time:"
+ModerationEmbedAmount: "Amount:"
+ModerationEmbedChannel: "Channel:"
+
+EmbedAppeal: "Appeal"
+EmbedAppealMsg: "If you feel like you were falsely punished, you can appeal it by clicking [here]({link})." # Available variables: {link}
+
+BanEmbedTitle: "Banned"
+BanEmbedDescription: "You were banned from ``{guildName}``" # Available variables: {guildName}
+
+KickEmbedTitle: "Kicked"
+KickEmbedDescription: "You were kicked from ``{guildName}``" # Available variables: {guildName}
+
+TimedOutEmbedTitle: "Timed Out"
+TimedOutEmbedDescription: "You were timed out in ``{guildName}``" # Available variables: {guildName}
+
+WarnEmbedTitle: "Warned"
+WarnEmbedDescription: "You were warned in ``{guildName}``" # Available variables: {guildName}
+
+# ===========================================================================
+# 8BALL COMMAND MESSAGES
+# ===========================================================================
+EightBallQuestion: "Question"
+EightBallAnswer: "Answer"
+
+EightBallReplies: ["Never", "Absolutely", "Absolutely, You should also go buy some stocks", "Without a doubt", "Yes, definitely", "It is certain", "Not so sure", "You tell me", "Unclear, ask again", "Possible, but not probable", "Yes", "My reply is yes", "For sure", "Could be", "Negative", "Most likely", "As I see it, yes", "No", "My reply is no", "I see good things happening", "Absolutely not", "Better not tell you now", "Signs point to yes", "It is decidedly so"]
+
+# ===========================================================================
+# VERIFICATION SYSTEM
+# ===========================================================================
+CaptchaEmbedTitle: "Verification Captcha"
+CaptchaEmbedDescription: "Complete the following captcha below to get full access to the server"
+CaptchaEmbedFooter: "Expires in: 3 minutes"
+SuccessVerify: "You have successfully verified, You now have access to the server."
+IncorrectCaptcha: "Incorrect captcha!"
+
+# ===========================================================================
+# BIRTHDAY SYSTEM
+# ===========================================================================
+BirthdayEmbedTitle: ":partying_face: Successfully set your birthday!"
+BirthdayEmbedDescription: "I have set your birthday to ``{date}``!" # Available variables: {date}
+
+BirthdayOnce: "You can only set your birthday once!"
+BirthdayDate: "You need to enter the date of your birthday!\nExample: May 4 2004"
+BirthdayGreater: "You can't enter a year greater than ``{year}``!" # Available variables: {year}
+
+# ===========================================================================
+# SUGGESTION SYSTEM
+# ===========================================================================
+suggestionSubmit: "Your suggestion has been submitted, Thank you!"
+suggestionTitle: "Suggestion"
+suggestionStatsTitle: "Suggestions"
+suggestionsTotal: "Total Suggestions:"
+suggestionsTotalUpvotes: "Total Upvotes:"
+suggestionsTotalDownvotes: "Total Downvotes:"
+suggestionInformation: "Information"
+suggestionUpvotes: "Upvotes:"
+suggestionDownvotes: "Downvotes:"
+suggestionFrom: "From:"
+suggestionStatus: "Status:"
+newSuggestionTitle: "💡 New Suggestion"
+suggestionVoteResetTitle: "Vote Reset"
+suggestionVoteReset: "Your vote on [this]({link}) suggestion has been reset!" # Use {link} for the suggestion message link
+suggestionNoVoteTitle: "No Vote"
+suggestionNoVote: "You haven't voted for [this]({link}) suggestion!" # Use {link} for the suggestion message link
+suggestionDownvotedTitle: "Suggestion Downvoted"
+suggestionDownvoted: "You successfully downvoted [this]({link}) suggestion!" # Use {link} for the suggestion message link
+suggestionAlreadyVotedTitle: "Already Voted"
+suggestionAlreadyVoted: "You have already voted on [this]({link}) suggestion! You can press the Reset Vote button to change your vote." # Use {link} for the suggestion message link
+suggestionUpvotedTitle: "Suggestion Upvoted"
+suggestionUpvoted: "You successfully upvoted [this]({link}) suggestion!" # Use {link} for the suggestion message link
+suggestionAcceptedTitle: "Suggestion Accepted"
+suggestionAccepted: "You successfully accepted [this]({link}) suggestion!" # Use {link} for the suggestion message link
+suggestionDeniedTitle: "Suggestion Denied"
+suggestionDenied: "You successfully denied [this]({link}) suggestion!" # Use {link} for the suggestion message link
+suggestionNoPerms: "You are not allowed to accept or deny suggestions!"
+suggestionCantVoteTitle: "Can't vote"
+suggestionCantVote: "You can't vote for [this]({link}) suggestion because it has already been accepted or denied!" # Use {link} for the suggestion message link
